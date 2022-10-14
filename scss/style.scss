@@ -1,0 +1,811 @@
+/* Global */
+@import "./base/reset";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/functions";
+
+@import "./base/typo";
+@import "./base/general";
+
+@import "./components/bootstrap";
+@import "./layout/footer";
+@import "./layout/header";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+/* Media Queries */
+
+/* 320-767 */ 
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+/* Nesting class: "imagenes" */
+
+.imagenes{
+    
+    img {
+        border-radius: 16px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: $space-s 0 $space-l 0;
+        padding-left: 0%;
+
+        li {
+            width: 30%;
+        }
+    }
+}
+
+.intro {
+    margin-bottom: $space-l;
+}
+
+/* H1 */
+
+.titulo {
+    margin-bottom: $space-s;
+}
+
+/* H2 */
+
+.titulo-sec {
+    margin-bottom: $space-s;
+    color: #2196F3;
+}
+
+/* H3 */
+
+.preguntas {
+    margin-bottom: $space-xs;
+}
+
+/* FAQ.html */
+
+.FAQ {
+
+    article {
+        margin-bottom: $space-s;
+        padding-bottom: $space-s;
+        border-bottom: 1px solid grey;
+
+        &:last-child {
+            border: none;
+        }
+
+        ul {
+            margin-top: $space-s;
+
+            li {
+                margin-bottom: $space-xs;
+            }
+        }
+    }
+
+}
+
+/* Contacto.html */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-sub {
+
+        input {
+            width: 95%;
+            padding: $space-xs;
+            margin: $space-xs 0 $space-s;
+        }
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    #boton {
+        width: 64px;
+        margin: $space-s 0 $space-l;
+        padding: $space-xxs;
+    }
+}
+
+.mapa {
+    margin: $space-xs 0 $space-s;
+}
+
+/* Productos.html */  
+
+.img-producto h3 {
+    text-align: center;
+}
+
+.info {
+
+    li {
+        margin-bottom: $space-xs;
+    }
+
+    ul {
+
+        .li-principal {
+
+            ol {
+
+                margin-bottom: $space-m;
+
+                strong {
+                    margin: $space-s 0 $space-xs;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* Recetas-0.html */
+
+.grids article {
+    margin: $space-s 0 $space-l;
+}
+
+/* Recetas 1 a 9 */
+
+.cont-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imagen-recetas {
+        width: 85%;
+        padding: $space-xs;
+        border: $space-xxs solid grey;
+        margin-bottom: $space-s;
+    }
+
+    .requisitos {
+
+        img {
+            width: $long-s;
+        }
+
+        ul {
+
+            padding-left: 0%;
+
+            li {
+                margin-bottom: $space-xs;
+            }
+        }
+
+
+
+
+    }
+}
+
+.procesos h2 {
+    margin: $space-s 0 $space-s; 
+}
+
+.ingredientes {
+    padding-bottom: 48px;
+    border-bottom: $space-xxs solid grey;
+
+    li {
+        margin-bottom: $space-xs;
+    }
+}
+
+.preparado {
+    margin: 48px 0 $space-l;
+
+    p {
+        margin-bottom: $space-s;
+    }
+
+    li {
+        margin-bottom: $space-s;
+    }
+}
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+/* Inicio */
+
+/*Carusel */
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.imagenes {
+    width: 550px;  
+    position: relative;
+    text-align: center;
+    margin-right: $space-m;
+
+    img {
+        border-radius: 30%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: $space-xs 0 $space-l 0;
+        padding-left: 0%;
+
+        li {
+            width: 30%;
+        }
+    }
+
+    .titular {
+        border-radius: 10%;
+        margin-bottom: $space-m;
+    }
+}
+
+/* Quienes Somos */
+
+.intro {
+    background-color: aliceblue;
+    padding: $space-xs;
+    max-width: 50%;
+
+    h2 {
+        text-align: center;
+        margin-bottom: $space-s;
+    }
+
+    p {
+        
+        line-height: 32px;
+    }
+}
+
+/* H1 */
+
+.titulo {
+    margin-bottom: $space-s;
+}
+
+/* H2 */
+
+.titulo-sec {
+    margin-bottom: $space-s;
+    color: #2196F3;
+}
+
+/* H3 */
+
+.preguntas {
+    margin-bottom: $space-xs;
+}
+
+/* FAQ.html */
+
+.FAQ {
+
+    article {
+        margin-bottom: $space-s;
+        padding-bottom: $space-s;
+        border-bottom: 1px solid grey;
+
+        &:last-child {
+            border: none;
+        }
+
+        ul {
+            margin-top: $space-s;
+
+            li {
+                margin-bottom: $space-xs;
+            }
+        }
+    }
+}
+
+/* Contacto.html */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+        width: 85%;
+    }
+
+    #boton {
+        width: 80px;
+        margin: $space-s 0 $space-l;
+        padding: $space-xs;
+    }
+
+    .form-sub {
+
+        input {
+            width: 100%;
+            padding: $space-xs;
+            margin: $space-xs 0 $space-s;
+        }
+    }
+}
+
+.cont-contacto .mapa {
+    margin: $space-xs $space-l $space-l $space-l;
+}
+
+/* PRODUCTOS.html */  
+
+.img-producto {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+    img {
+        width: 400px;
+        max-height: 400px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.info {
+    padding-bottom: 64px;
+    border-bottom: 2px solid grey;
+
+    li {
+        margin-bottom: $space-xs;
+    }
+
+    strong {
+
+        margin: $space-s 0 $space-xs;
+        display: block;
+        }
+}
+
+.last {
+    border: none;
+}
+
+/* Recetas-0.html */
+
+.titulo-recetas #receta {
+    margin-top: $space-l;
+    text-align: center;
+    margin-bottom: -64px;
+}
+
+.grids {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+
+    article {
+        margin: $space-s 0px;
+        text-align: center;
+    }
+
+    img {
+        width: 90%;
+        max-width: 300px;
+        max-height: 300px;
+        margin-bottom: $space-l;
+    }
+}
+
+/* Recetas 1 a 9 */
+
+.cont-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        margin: $space-xs 0;
+    }
+
+    .imagen-recetas {
+        max-width: 70%;
+        max-height: 70%;
+        padding: $space-xs;
+        border: 2px solid grey;
+        margin: $space-s 0;
+    }
+
+    .requisitos {
+
+        img {
+            width: $long-s;
+        }
+
+        ul {
+
+            padding: 0%;
+
+            li {
+                font-size: $font-m;
+                margin: $space-s 0 $space-s;
+            }
+        }
+
+
+    }
+}
+
+.procesos h2 {
+    margin: $space-s 0 $space-s; 
+}
+
+.ingredientes {
+    padding-bottom: 48px;
+    border-bottom: 3px solid grey;
+
+    li {
+        margin-bottom: $space-xs;
+    }
+}
+
+.preparado {
+    margin: 48px 0 $space-l;
+
+    p {
+        margin-bottom: $space-s;
+    }
+
+    li {
+        margin-bottom: $space-s;
+    }
+}
+}
+
+/* Dekstop */
+
+@media only screen and (min-width:1200px) {
+
+/* Inicio */
+
+/*Carusel*/
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px;
+}
+
+.imagenes {
+    width: 550px;  
+    position: relative;
+    text-align: center;
+    margin-right: $space-m;
+
+    img {
+        border-radius: 30%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: $space-xs 0 $space-l 0;
+
+        li {
+            width: 30%;
+        }
+    }
+
+    .titular {
+        border-radius: 10%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Quienes Somos */
+
+.intro {
+    background-color: aliceblue;
+    padding: $space-xs;
+    max-width: 50%;
+
+    h2 {
+        text-align: center;
+        margin-bottom: $space-s;
+    }
+
+    p {
+        
+        line-height: $line-m;
+    }
+}
+
+/*FAQ*/
+
+.titulo-FAQ {
+    font-weight: 700;
+    padding-top: 50px;
+    border-top: $space-xxs solid black;
+
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+}
+
+.FAQ {
+    margin-bottom: 100px;
+
+    p {
+        
+        margin-bottom: $space-s;
+    }
+    
+    ul {
+        margin-left: 64px;
+        margin-top: $space-s;
+    }
+
+    li {
+        &::before {
+            padding: $space-xs;
+            content: "►";
+            display: inline-block;
+            width: $long-s;
+            margin-left: -8px
+        }
+    }
+
+    article {
+        margin-left: $space-xs;
+    }
+}
+
+.preguntas {
+    font-size: $font-s;
+    margin-top: $space-s;
+    margin-bottom: $space-xs;
+    
+}
+
+/* Productos.html */
+
+.titulo-productos {
+    text-align: center;
+    
+    background-color: azure;
+    padding: $space-xs;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 100px;
+    border-bottom: $space-xxs solid black;
+
+    .img-producto {
+        margin-right: 50px;
+        max-width: 375px;
+    }
+
+    img {
+        border-radius: 10%;
+        width: 100%;
+    }
+
+    article {
+
+        h3 {
+            text-align: center;
+            margin: $space-xs;
+        }
+    }
+
+    li ol li ul li::before {
+        content: "►";
+        padding: $space-xs;
+        display: inline-block;
+        width: $space-s;
+        margin-left: -8px;
+    }
+
+    .li-principal {
+        margin-bottom: $space-l;
+    }
+
+    .li-secundario {
+        margin-top: $space-s;
+    }
+
+    .info {
+        margin-bottom: 100px;
+
+        ul {
+            font-weight: 700;
+            padding: normal;
+        }
+    }
+}
+
+#galleta {
+    border-bottom: none;
+}
+
+/* Recetas.html */
+
+.grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    gap: $space-l;
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.titulo-recetas {
+    text-align: center;
+    
+    background-color: azure;
+    padding: $space-xs;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Contacto */
+
+.cont-contacto {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: $space-m;
+        border-bottom: $space-xxs solid #c8c8c8;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: $space-xs;
+    width: 70%;
+    align-items: center;
+    border: 5px solid gray;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 150px;
+
+    textarea {
+        width: 70%;
+        justify-content: center;
+        margin-bottom: $space-m;
+    }
+
+    #boton{
+        padding: $space-xs;
+    }
+
+    .form-sub {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        gap: 100px;
+    
+        input {
+            width: 300px;
+            height: 30px;
+            
+        }
+    }
+}
+
+/* Recetas 1 a 9 */
+
+.requisitos img {
+    width: $long-s;
+}
+
+.cont-principal {
+    display: flex;
+    max-width: 100%;
+    border: $space-xxs solid black;
+    margin-bottom: 50px;
+    align-items: center;
+
+    .imagen-recetas {
+        max-width: 600px;
+
+        img {
+            width: 75%;
+        }
+    }
+
+    ul {
+        max-width: 100%;
+        margin-left: 1px;
+        padding: 64px;
+        
+
+        li {
+            font-size: $font-s;
+            margin-bottom: $space-xs;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.procesos {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.ingredientes {
+    min-width: 50%;
+    border-right: 2px solid black;
+
+    ul {
+
+        li {
+            margin-bottom: $space-s;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: $space-l;
+    }
+}   
+
+.preparado {
+
+    h2 {
+        text-align: center;
+        margin-bottom: $space-l;
+    }
+
+    p {
+        margin-bottom: $space-s;
+        font-weight: 700;
+    }
+
+    ol{
+
+        li {
+            margin-bottom: $space-s;
+        }
+    }
+}
+
+}
+

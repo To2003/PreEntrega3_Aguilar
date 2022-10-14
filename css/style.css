@@ -1,0 +1,678 @@
+@charset "UTF-8";
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+* {
+  margin: 0%; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/* Fonts Size */
+/* Space (margin/padding) */
+/* Long (width) */
+/* Tall (height) */
+/* Line (line-height/interlineado) */
+/* Fonts */
+* {
+  font-family: 'Montserrat'; }
+
+p {
+  line-height: 24px;
+  font-size: 16px; }
+
+ul {
+  margin: 0;
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.contenedor {
+  width: calc(100% - 32px);
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px; }
+
+picture {
+  overflow: hidden;
+  border-radius: 10%;
+  margin-bottom: 24px;
+  display: inline-block; }
+  picture:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all .5s ease-in-out; }
+
+.grids img:hover {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: all .6s ease-in-out; }
+
+.logo {
+  width: 96px; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    background-color: #f4f4f4;
+    padding: 16px 0 96px;
+    text-align: center; }
+    .footer .rss svg {
+      width: 24px;
+      height: 24px; }
+    .footer .rss a:not(:last-child) {
+      margin-right: 16px; }
+    .footer p {
+      margin-bottom: 8px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    background-color: #f4f4f4;
+    padding: 16px 0 96px;
+    text-align: center; }
+    .footer .rss svg {
+      width: 24px;
+      height: 24px; }
+    .footer .rss a:not(:last-child) {
+      margin-right: 8px; }
+    .footer p {
+      margin-bottom: 4px; } }
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    background-color: #c8c8c8;
+    padding: 24px 0 24px;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: none;
+    width: 100%; }
+    .footer p {
+      margin-right: 8px;
+      position: relative;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      left: 16px; }
+    .footer svg {
+      justify-content: space-between;
+      margin-right: 16px; }
+    .footer article {
+      text-align: end; } }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    background-color: darkgray;
+    margin-bottom: 16px; }
+  .Menu {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 15000;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    background-color: red;
+    padding: 0.3125rem 0.625rem 0.625rem;
+    margin-top: 8px;
+    align-content: center;
+    left: -8px; }
+  /* Nesting class: "listaMenu" */
+  .listaMenu {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+    padding-left: 0;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto; }
+    .listaMenu li {
+      position: relative; }
+      .listaMenu li a {
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center; }
+        .listaMenu li a svg {
+          width: 24px;
+          height: 24px;
+          fill: white;
+          margin-bottom: 4px; }
+        .listaMenu li a span {
+          font-size: 12px;
+          color: white; }
+      .listaMenu li ul {
+        display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    background-color: darkgray;
+    margin-bottom: 16px; }
+  .Menu {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 15000;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    background-color: red;
+    padding: 0.3125rem 0.625rem 0.625rem;
+    margin-top: 8px;
+    align-content: center;
+    left: -8px; }
+  .listaMenu {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+    padding-left: 0;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto; }
+    .listaMenu li {
+      position: relative; }
+      .listaMenu li a {
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center; }
+        .listaMenu li a svg {
+          width: 24px;
+          height: 24px;
+          fill: white;
+          margin-bottom: 4px; }
+        .listaMenu li a span {
+          font-size: 16px;
+          color: white; }
+      .listaMenu li ul {
+        display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  header {
+    background-color: #c8c8c8;
+    margin-bottom: 16px;
+    padding: 16px; }
+    header .contenedor {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: none; }
+  .Menu {
+    text-align: inline;
+    display: flex;
+    flex-direction: none;
+    justify-content: none;
+    align-items: center; }
+    .Menu .listaMenu {
+      font-size: 24px;
+      font-weight: bold;
+      font-style: oblique;
+      display: block; }
+      .Menu .listaMenu li {
+        background-color: grey;
+        border: black 2px solid;
+        display: inline-block;
+        margin-right: 16px;
+        position: relative; }
+        .Menu .listaMenu li a {
+          display: block;
+          padding: 0 8px; }
+          .Menu .listaMenu li a:hover {
+            background-color: white;
+            color: #D7C8B6; }
+        .Menu .listaMenu li ul {
+          display: none;
+          position: absolute;
+          left: 8px;
+          z-index: 10;
+          font-size: 16px;
+          padding: 0%; }
+          .Menu .listaMenu li ul li {
+            background-color: #c8c8c8; }
+        .Menu .listaMenu li:hover ul {
+          display: block; } }
+
+/* Media Queries */
+/* 320-767 */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* Nesting class: "imagenes" */
+  .imagenes img {
+    border-radius: 16px; }
+  .imagenes ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 32px 0;
+    padding-left: 0%; }
+    .imagenes ul li {
+      width: 30%; }
+  .intro {
+    margin-bottom: 32px; }
+  /* H1 */
+  .titulo {
+    margin-bottom: 16px; }
+  /* H2 */
+  .titulo-sec {
+    margin-bottom: 16px;
+    color: #2196F3; }
+  /* H3 */
+  .preguntas {
+    margin-bottom: 8px; }
+  /* FAQ.html */
+  .FAQ article {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid grey; }
+    .FAQ article:last-child {
+      border: none; }
+    .FAQ article ul {
+      margin-top: 16px; }
+      .FAQ article ul li {
+        margin-bottom: 8px; }
+  /* Contacto.html */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form .form-sub input {
+      width: 95%;
+      padding: 8px;
+      margin: 8px 0 16px; }
+    .form textarea {
+      width: 100%; }
+    .form #boton {
+      width: 64px;
+      margin: 16px 0 32px;
+      padding: 4px; }
+  .mapa {
+    margin: 8px 0 16px; }
+  /* Productos.html */
+  .img-producto h3 {
+    text-align: center; }
+  .info li {
+    margin-bottom: 8px; }
+  .info ul .li-principal ol {
+    margin-bottom: 24px; }
+    .info ul .li-principal ol strong {
+      margin: 16px 0 8px;
+      display: block; }
+  /* Recetas-0.html */
+  .grids article {
+    margin: 16px 0 32px; }
+  /* Recetas 1 a 9 */
+  .cont-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cont-principal .imagen-recetas {
+      width: 85%;
+      padding: 8px;
+      border: 4px solid grey;
+      margin-bottom: 16px; }
+    .cont-principal .requisitos img {
+      width: 16px; }
+    .cont-principal .requisitos ul {
+      padding-left: 0%; }
+      .cont-principal .requisitos ul li {
+        margin-bottom: 8px; }
+  .procesos h2 {
+    margin: 16px 0 16px; }
+  .ingredientes {
+    padding-bottom: 48px;
+    border-bottom: 4px solid grey; }
+    .ingredientes li {
+      margin-bottom: 8px; }
+  .preparado {
+    margin: 48px 0 32px; }
+    .preparado p {
+      margin-bottom: 16px; }
+    .preparado li {
+      margin-bottom: 16px; } }
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Inicio */
+  /*Carusel */
+  .carrusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; }
+  .imagenes {
+    width: 550px;
+    position: relative;
+    text-align: center;
+    margin-right: 24px; }
+    .imagenes img {
+      border-radius: 30%; }
+    .imagenes ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0 32px 0;
+      padding-left: 0%; }
+      .imagenes ul li {
+        width: 30%; }
+    .imagenes .titular {
+      border-radius: 10%;
+      margin-bottom: 24px; }
+  /* Quienes Somos */
+  .intro {
+    background-color: aliceblue;
+    padding: 8px;
+    max-width: 50%; }
+    .intro h2 {
+      text-align: center;
+      margin-bottom: 16px; }
+    .intro p {
+      line-height: 32px; }
+  /* H1 */
+  .titulo {
+    margin-bottom: 16px; }
+  /* H2 */
+  .titulo-sec {
+    margin-bottom: 16px;
+    color: #2196F3; }
+  /* H3 */
+  .preguntas {
+    margin-bottom: 8px; }
+  /* FAQ.html */
+  .FAQ article {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid grey; }
+    .FAQ article:last-child {
+      border: none; }
+    .FAQ article ul {
+      margin-top: 16px; }
+      .FAQ article ul li {
+        margin-bottom: 8px; }
+  /* Contacto.html */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form textarea {
+      width: 85%; }
+    .form #boton {
+      width: 80px;
+      margin: 16px 0 32px;
+      padding: 8px; }
+    .form .form-sub input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px; }
+  .cont-contacto .mapa {
+    margin: 8px 32px 32px 32px; }
+  /* PRODUCTOS.html */
+  .img-producto {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px; }
+    .img-producto img {
+      width: 400px;
+      max-height: 400px; }
+    .img-producto h3 {
+      text-align: center; }
+  .info {
+    padding-bottom: 64px;
+    border-bottom: 2px solid grey; }
+    .info li {
+      margin-bottom: 8px; }
+    .info strong {
+      margin: 16px 0 8px;
+      display: block; }
+  .last {
+    border: none; }
+  /* Recetas-0.html */
+  .titulo-recetas #receta {
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: -64px; }
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center; }
+    .grids article {
+      margin: 16px 0px;
+      text-align: center; }
+    .grids img {
+      width: 90%;
+      max-width: 300px;
+      max-height: 300px;
+      margin-bottom: 32px; }
+  /* Recetas 1 a 9 */
+  .cont-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cont-principal h1 {
+      text-align: center;
+      margin: 8px 0; }
+    .cont-principal .imagen-recetas {
+      max-width: 70%;
+      max-height: 70%;
+      padding: 8px;
+      border: 2px solid grey;
+      margin: 16px 0; }
+    .cont-principal .requisitos img {
+      width: 16px; }
+    .cont-principal .requisitos ul {
+      padding: 0%; }
+      .cont-principal .requisitos ul li {
+        font-size: 24px;
+        margin: 16px 0 16px; }
+  .procesos h2 {
+    margin: 16px 0 16px; }
+  .ingredientes {
+    padding-bottom: 48px;
+    border-bottom: 3px solid grey; }
+    .ingredientes li {
+      margin-bottom: 8px; }
+  .preparado {
+    margin: 48px 0 32px; }
+    .preparado p {
+      margin-bottom: 16px; }
+    .preparado li {
+      margin-bottom: 16px; } }
+
+/* Dekstop */
+@media only screen and (min-width: 1200px) {
+  /* Inicio */
+  /*Carusel*/
+  .carrusel {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 50px; }
+  .imagenes {
+    width: 550px;
+    position: relative;
+    text-align: center;
+    margin-right: 24px; }
+    .imagenes img {
+      border-radius: 30%; }
+    .imagenes ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0 32px 0; }
+      .imagenes ul li {
+        width: 30%; }
+    .imagenes .titular {
+      border-radius: 10%;
+      margin-bottom: 20px; }
+  /* Quienes Somos */
+  .intro {
+    background-color: aliceblue;
+    padding: 8px;
+    max-width: 50%; }
+    .intro h2 {
+      text-align: center;
+      margin-bottom: 16px; }
+    .intro p {
+      line-height: 24px; }
+  /*FAQ*/
+  .titulo-FAQ {
+    font-weight: 700;
+    padding-top: 50px;
+    border-top: 4px solid black; }
+    .titulo-FAQ h1 {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 50px; }
+  .FAQ {
+    margin-bottom: 100px; }
+    .FAQ p {
+      margin-bottom: 16px; }
+    .FAQ ul {
+      margin-left: 64px;
+      margin-top: 16px; }
+    .FAQ li::before {
+      padding: 8px;
+      content: "►";
+      display: inline-block;
+      width: 16px;
+      margin-left: -8px; }
+    .FAQ article {
+      margin-left: 8px; }
+  .preguntas {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px; }
+  /* Productos.html */
+  .titulo-productos {
+    text-align: center;
+    background-color: azure;
+    padding: 8px;
+    margin-top: 50px;
+    margin-bottom: 100px; }
+  .producto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    border-bottom: 4px solid black; }
+    .producto .img-producto {
+      margin-right: 50px;
+      max-width: 375px; }
+    .producto img {
+      border-radius: 10%;
+      width: 100%; }
+    .producto article h3 {
+      text-align: center;
+      margin: 8px; }
+    .producto li ol li ul li::before {
+      content: "►";
+      padding: 8px;
+      display: inline-block;
+      width: 16px;
+      margin-left: -8px; }
+    .producto .li-principal {
+      margin-bottom: 32px; }
+    .producto .li-secundario {
+      margin-top: 16px; }
+    .producto .info {
+      margin-bottom: 100px; }
+      .producto .info ul {
+        font-weight: 700;
+        padding: normal; }
+  #galleta {
+    border-bottom: none; }
+  /* Recetas.html */
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    gap: 32px; }
+    .grids img {
+      width: 300px;
+      height: 300px; }
+  .titulo-recetas {
+    text-align: center;
+    background-color: azure;
+    padding: 8px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  /* Contacto */
+  .cont-contacto {
+    text-align: center;
+    margin-bottom: 50px; }
+    .cont-contacto h2 {
+      margin-top: 50px;
+      margin-bottom: 24px;
+      border-bottom: 4px solid #c8c8c8; }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    width: 70%;
+    align-items: center;
+    border: 5px solid gray;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 150px; }
+    .form textarea {
+      width: 70%;
+      justify-content: center;
+      margin-bottom: 24px; }
+    .form #boton {
+      padding: 8px; }
+    .form .form-sub {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+      gap: 100px; }
+      .form .form-sub input {
+        width: 300px;
+        height: 30px; }
+  /* Recetas 1 a 9 */
+  .requisitos img {
+    width: 16px; }
+  .cont-principal {
+    display: flex;
+    max-width: 100%;
+    border: 4px solid black;
+    margin-bottom: 50px;
+    align-items: center; }
+    .cont-principal .imagen-recetas {
+      max-width: 600px; }
+      .cont-principal .imagen-recetas img {
+        width: 75%; }
+    .cont-principal ul {
+      max-width: 100%;
+      margin-left: 1px;
+      padding: 64px; }
+      .cont-principal ul li {
+        font-size: 16px;
+        margin-bottom: 8px; }
+        .cont-principal ul li:last-child {
+          margin-bottom: 0; }
+  .procesos {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px; }
+  .ingredientes {
+    min-width: 50%;
+    border-right: 2px solid black; }
+    .ingredientes ul li {
+      margin-bottom: 16px; }
+    .ingredientes h2 {
+      text-align: center;
+      margin-bottom: 32px; }
+  .preparado h2 {
+    text-align: center;
+    margin-bottom: 32px; }
+  .preparado p {
+    margin-bottom: 16px;
+    font-weight: 700; }
+  .preparado ol li {
+    margin-bottom: 16px; } }
