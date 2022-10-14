@@ -298,11 +298,13 @@ picture {
     text-align: center; }
   .info li {
     margin-bottom: 8px; }
-  .info ul .li-principal ol {
-    margin-bottom: 24px; }
-    .info ul .li-principal ol strong {
-      margin: 16px 0 8px;
-      display: block; }
+  .info ul {
+    padding: 0; }
+    .info ul .li-principal ol {
+      margin-bottom: 24px; }
+      .info ul .li-principal ol strong {
+        margin: 16px 0 8px;
+        display: block; }
   /* Recetas-0.html */
   .grids article {
     margin: 16px 0 32px; }
