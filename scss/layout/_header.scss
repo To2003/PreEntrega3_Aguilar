@@ -135,21 +135,21 @@ header {
         display: block;
     
         li {
-            background-color: grey;
-            border: black 2px solid;
             display: inline-block;
-            margin-right: $space-s;
+            margin-right: $space-m;
             position: relative;
-    
-    
     
             a {
                 display: block;
                 padding: 0 $space-xs;
+
+                svg {
+                    display: none;
+                }
     
                 &:hover {
-                    background-color: white;
-                    color: #D7C8B6;
+
+                    color: white;
                 }
             }
     
@@ -162,7 +162,15 @@ header {
                 padding: 0%;
     
                 li {
-                    background-color: #c8c8c8;
+                    margin-top: $space-xs;
+
+                    a{
+                        
+                        &:hover{
+                            color: red;
+                        }
+
+                    }
                 }
             }
     

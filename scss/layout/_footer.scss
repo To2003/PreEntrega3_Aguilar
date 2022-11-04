@@ -65,14 +65,15 @@
             @include font ($font-s, 700, normal);
             left: $space-s;
         }
-    
-        svg {
-            justify-content: space-between;
-            margin-right: $space-s;
-        }
-    
-        article {
-            text-align: end;
+
+        .rss {
+
+            svg {
+                justify-content: space-between;
+                margin-right: $space-m;
+                width: $long-m;
+                height: $tall-m;
+            }
         }
     }
     
