@@ -602,7 +602,6 @@ img {
     height: 100%;
     backface-visibility: hidden; }
   .frente {
-    background: crimson;
     max-width: 100%; }
   .atras {
     background: rgba(255, 255, 0, 0.295);
