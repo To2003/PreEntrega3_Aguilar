@@ -292,11 +292,14 @@ img {
         margin: 16px 0 8px;
         display: block; }
   /* Recetas-0.html */
-  .grids img {
-    width: 280px;
-    height: 280px; }
-  .grids article {
-    margin: 16px 0 32px; }
+  .grids {
+    justify-content: center; }
+    .grids img {
+      width: 280px;
+      height: 280px; }
+    .grids article {
+      margin: 16px 0 32px;
+      justify-items: center; }
   .carta {
     transform-style: preserve-3d;
     transition: 2s;

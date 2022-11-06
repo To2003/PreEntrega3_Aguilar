@@ -159,8 +159,10 @@
     }
 
     article {
-    margin: $space-s 0 $space-l;
-}
+    margin: $space-s auto $space-l;
+    justify-items: center;
+    }
+
 }
 .carta {
     transform-style: preserve-3d;
@@ -456,7 +458,7 @@ h3, p {
     justify-items: center;
 
     article {
-        margin: $space-s 0px;
+        margin: $space-s auto;
         text-align: center;
     }
 
