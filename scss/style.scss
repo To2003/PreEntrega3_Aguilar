@@ -155,6 +155,50 @@
     margin: $space-s 0 $space-l;
 }
 
+.carta {
+    transform-style: preserve-3d;
+    transition: 2s;
+
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.frente {
+    max-width: 100%;
+}
+
+.atras {
+    background: rgba(255, 255, 0, 0.295);
+    transform: rotateY(180deg);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    
+    img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+h3, p {
+    margin: 0;
+    padding: 16px;
+}  
+
+
 /* Recetas 1 a 9 */
 
 .cont-principal {
@@ -408,11 +452,58 @@
     }
 
     img {
+        width: 300px;
+        height: 275px;
         width: 90%;
-        max-width: 300px;
-        max-height: 300px;
         margin-bottom: $space-l;
     }
+}
+
+.carta {
+    width: 300px;
+    height: 275px;
+    transform-style: preserve-3d;
+    transition: 2s;
+
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.frente {
+    max-width: 100%;
+}
+
+.atras {
+    background: rgba(255, 255, 0, 0.295);
+    transform: rotateY(180deg);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    
+    img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        opacity: .2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 275px;
+    }
+}
+
+h3, p {
+    margin: 0;
+    padding: 16px;
 }
 
 /* Recetas 1 a 9 */
